@@ -12,3 +12,5 @@ cd ..
 git clone https://github.com/usdogu/dwm-dots.git
 cd dwm-dots
 sudo make install
+echo "Finished"
+cd ~
