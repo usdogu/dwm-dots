@@ -926,10 +926,12 @@ static const char *statuscmd[] = {"/bin/sh", "-c", NULL, NULL};
 #endif // BAR_STATUSCMD_PATCH
 
 #if ON_EMPTY_KEYS_PATCH
-static const char *nyxtcmd[] = {"nyxt", NULL};
+static const char *browsercmd[] = {"brave", NULL};
+static const char *terminalcmd[] = {"st", NULL};
 static Key on_empty_keys[] = {
     /* modifier key            function                argument */
-    {0, XK_b, spawn, {.v = nyxtcmd}},
+    {0, XK_b, spawn, {.v = browsercmd}},
+    {0, XK_t, spawn, {.v = terminalcmd}},
 };
 #endif // ON_EMPTY_KEYS_PATCH
 
