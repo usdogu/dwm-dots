@@ -905,7 +905,7 @@ static const char *dmenucmd[] = {"dmenu_run",
 #endif // BAR_DMENUMATCHTOP_PATCH
                                  NULL};
 static const char *termcmd[] = {"st", NULL};
-
+static const char *emacscmd[] = {"emacsclient", "-c", "-a", "'emacs'", NULL};
 #if BAR_STATUSCMD_PATCH
 #if BAR_DWMBLOCKS_PATCH
 /* This defines the name of the executable that handles the bar (used for
@@ -943,6 +943,7 @@ static Key keys[] = {
 #endif // KEYMODES_PATCH
     {MODKEY | ShiftMask, XK_Return, spawn, {.v = dmenucmd}},
     {MODKEY, XK_Return, spawn, {.v = termcmd}},
+    {MODKEY, XK_e, spawn, {.v = emacscmd}},
 #if RIODRAW_PATCH
     {MODKEY | ControlMask, XK_p, riospawnsync, {.v = dmenucmd}},
     {MODKEY | ControlMask, XK_Return, riospawn, {.v = termcmd}},
