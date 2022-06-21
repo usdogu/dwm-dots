@@ -926,7 +926,7 @@ static const char *statuscmd[] = {"/bin/sh", "-c", NULL, NULL};
 #endif // BAR_STATUSCMD_PATCH
 
 #if ON_EMPTY_KEYS_PATCH
-static const char *browsercmd[] = {"brave", NULL};
+static const char *browsercmd[] = {"firefox", NULL};
 static const char *terminalcmd[] = {"st", NULL};
 static Key on_empty_keys[] = {
     /* modifier key            function                argument */
